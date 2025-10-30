@@ -1,0 +1,88 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 215 50% 8%;
+    --foreground: 0 0% 96%;
+
+    --card: 215 45% 12%;
+    --card-foreground: 0 0% 96%;
+
+    --popover: 215 50% 8%;
+    --popover-foreground: 0 0% 96%;
+
+    --primary: 0 0% 96%;
+    --primary-foreground: 215 50% 8%;
+
+    --secondary: 215 40% 15%;
+    --secondary-foreground: 0 0% 96%;
+
+    --muted: 215 30% 20%;
+    --muted-foreground: 0 0% 65%;
+
+    --accent: 43 91% 38%;
+    --accent-foreground: 215 50% 8%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 96%;
+
+    --border: 215 30% 25%;
+    --input: 215 30% 20%;
+    --ring: 43 91% 38%;
+
+    --radius: 0.5rem;
+
+    /* Luxury gradients */
+    --gradient-gold: linear-gradient(135deg, hsl(43, 91%, 38%) 0%, hsl(35, 70%, 50%) 100%);
+    --gradient-overlay: linear-gradient(180deg, rgba(10, 17, 31, 0.7) 0%, rgba(10, 17, 31, 0.4) 100%);
+    
+    /* Shadows */
+    --shadow-luxury: 0 10px 40px -10px rgba(184, 134, 11, 0.3);
+    --shadow-card: 0 4px 20px rgba(0, 0, 0, 0.5);
+    
+    /* Transitions */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif;
+  }
+
+  h1 {
+    @apply tracking-widest;
+  }
+
+  h2 {
+    @apply tracking-wider;
+  }
+}
+
+@layer utilities {
+  .hover-lift {
+    @apply transition-all duration-300 hover:-translate-y-1 hover:shadow-luxury;
+  }
+
+  .gold-border-hover {
+    @apply transition-all duration-300 border-2 border-foreground hover:border-accent;
+  }
+
+  .text-shadow-luxury {
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.8);
+  }
+}
