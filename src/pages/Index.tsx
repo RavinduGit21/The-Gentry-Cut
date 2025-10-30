@@ -95,7 +95,7 @@ const Index = () => {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <PackageCard
                 title="Standard"
-                price="$85"
+                price="LKR 25000"
                 features={[
                   "Precision haircut",
                   "Hot towel treatment",
@@ -107,7 +107,7 @@ const Index = () => {
               
               <PackageCard
                 title="Signature"
-                price="$135"
+                price="LKR 40000"
                 features={[
                   "Everything in Standard",
                   "Beard sculpting & shaping",
@@ -120,7 +120,7 @@ const Index = () => {
               
               <PackageCard
                 title="The Gentry Experience"
-                price="$225"
+                price="LKR 70000"
                 features={[
                   "Everything in Signature",
                   "Private studio booking",
