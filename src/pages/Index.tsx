@@ -4,6 +4,7 @@ import ServiceCard from "@/components/ServiceCard";
 import PackageCard from "@/components/PackageCard";
 import GalleryGrid from "@/components/GalleryGrid";
 import ContactForm from "@/components/ContactForm";
+import OwnerSection from "@/components/OwnerSection";
 import Footer from "@/components/Footer";
 import { MapPin, Phone, Mail } from "lucide-react";
 
@@ -143,10 +144,13 @@ const Index = () => {
           <h2 className="text-4xl md:text-5xl font-serif text-center mb-16">
             The Gallery
           </h2>
-          
+
           <GalleryGrid images={galleryImages} />
         </div>
       </section>
+
+      {/* Owner Section */}
+      <OwnerSection />
 
       {/* Booking & Contact Section */}
       <section id="booking" className="py-24 px-6 bg-background">

@@ -41,6 +41,12 @@ const Footer = () => {
                 Gallery
               </button>
               <button
+                onClick={() => scrollToSection("owner")}
+                className="block text-muted-foreground hover:text-accent transition-colors duration-300"
+              >
+                Owner
+              </button>
+              <button
                 onClick={() => scrollToSection("booking")}
                 className="block text-muted-foreground hover:text-accent transition-colors duration-300"
               >

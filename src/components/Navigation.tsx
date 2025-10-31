@@ -49,6 +49,12 @@ const Navigation = () => {
             >
               Gallery
             </button>
+            <button
+              onClick={() => scrollToSection("owner")}
+              className="text-foreground/80 hover:text-accent transition-colors duration-300 font-sans"
+            >
+              Owner
+            </button>
             <Button
               variant="gold"
               size="sm"
